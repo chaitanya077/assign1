@@ -1,10 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
 
 function App() {
-  return (
+  const {sno,setsno} = useState('S.No');
+  const {item,setitem} = useState('Item');
+  const {Itemname,setitemname} = useState('Item Name');
+  const {uom,setuom} = useState('UOM');
+  const {hsncode,sethsncode} = useState('HSN CODE');
+  const {quantity,setquantity} = useState('Quantity');
+  const {rate,setrate} = useState('Rate');
+  const {grossvalue,setgrossvalue} = useState('Gross Value');
+  const {cgst,setcgst} = useState('CGST(%)');
+  const {cgst1,setcgst1} = useState('CGST');
+  const {sgst,setsgst} = useState('SGST(%)');
+  const {sgst1,setsgst1} = useState('IGST(%)');
+  const {igst,setigst} = useState('IGST');
+  const {netvalu,setnetvalu} = useState('NetValue');
+  const {remarks,setremarks} = useState('Remarks');
+
+return (
     <div className="App p-5">
-    <h2>Purchase Order</h2>
+    <h2>Purchase Order form</h2>
     <form>
   <div class="form-group">
     <label for="exampleInputEmail1">S.No</label>
